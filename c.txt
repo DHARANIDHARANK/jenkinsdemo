@@ -1,1 +1,1 @@
-this is after enabling the email notification 
+changing the script after a enabling notification

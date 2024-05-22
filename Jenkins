@@ -10,6 +10,7 @@ pipeline {
                 // Build the Docker image using the build script
                 sh './build.sh'
 
+                docker login -u this23 -p $docker_pwd
                 
             }
         }

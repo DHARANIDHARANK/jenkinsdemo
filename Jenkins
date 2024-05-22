@@ -11,6 +11,9 @@ pipeline {
                 sh './build.sh'
 
                 sh 'docker login -u this23 -p $docker_pwd'
+
+                sh 'docker tag test this23/hello-app'
+                sh 'docker push this23/hello-app'
                 
             }
         }
